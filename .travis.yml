@@ -20,3 +20,16 @@ after_success:
   - docker push just4docker/multi-nginx
   - docker push just4docker/multi-server
   - docker push just4docker/multi-worker
+#deploy:
+  #edge: true
+  #provider: elasticbeanstalk
+  #region:
+  #app:
+  #env:
+  #bucket_name:
+  #bucket_path:
+  #on:
+    #branch: master
+  #access_key: $AWS_ACCESS_KEY
+  #secret_access_key:
+    #secure: $AWS_SECRET_KEY
