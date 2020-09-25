@@ -20,6 +20,7 @@ after_success:
   - docker push just4docker/multi-nginx
   - docker push just4docker/multi-server
   - docker push just4docker/multi-worker
+
 #deploy:
   #edge: true
   #provider: elasticbeanstalk

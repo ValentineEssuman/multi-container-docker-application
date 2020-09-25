@@ -42,7 +42,7 @@ app.get('/', (req, res) => {
 
 app.get('/values/all', async (req, res) => {
   const values = await pgClient.query('SELECT * from values');
-
+  console.log('sending from pg', values.rows);
   res.send(values.rows);
 });
 
@@ -68,4 +68,5 @@ app.post('/values', async (req, res) => {
 
 app.listen(5000, (err) => {
   console.log('Listening');
+
 });
